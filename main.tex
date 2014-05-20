@@ -1,0 +1,36 @@
+\documentclass[a4paper,11pt]{report}
+
+\usepackage{graphicx}	% to set the title_page image (university's logo)
+\usepackage{amsmath} 	% to use the math environments align, aligned, gather, gathered, multline
+\usepackage[titletoc]{appendix}
+\usepackage{cite}		% to use bibliography
+
+% USE THE NEW COMMAND \chap FOR ABSTRACT
+\newcommand\chap[1]{%
+  \chapter*{#1}%
+  \addcontentsline{toc}{chapter}{\protect\numberline{}#1}}
+
+\author{Roberto Zen}
+\title{My beautiful title}
+
+\begin{document}
+
+\input{title_page}
+
+\tableofcontents
+\listoftables
+
+% HERE PUT THE STRUCTURE OF YOUR THESIS
+% \input{abstract}
+% \input{chapter_1}
+% \input{chapter_2}
+% \input{chapter_3}
+% \input{conclusion}
+
+% HERE PUT THE BIBLIOGRAPHY
+% \bibliographystyle{plain}
+% \bibliography{bibliography}
+
+% \input{appendicies}
+
+\end{document}
